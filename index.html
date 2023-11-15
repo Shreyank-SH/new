@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 2nd Month Anniversary!</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #fce4ec; /* Light Pink */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #e91e63; /* Pink */
+            padding: 20px;
+            color: white;
+            font-size: 36px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        #content {
+            background-color: #ffffff; /* White */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        #quote {
+            font-style: italic;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #888;
+        }
+        
+        img {
+            width: auto;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Happy 2nd Month Anniversary!
+    </header>
+
+    <main>
+        <div id="content">
+            <p>Dear Babe,</p>
+            
+            <p>As we celebrate our incredible journey of 2 months in this long-distance relationship, I am reminded of the strength and depth of our connection. Despite the miles that separate us, our love has flourished, creating a bond that knows no distance.</p>
+
+            <p>Every virtual moment spent with you has become a treasure, and each message, call, or shared laughter has bridged the physical gap between us. Your presence, though miles away, is a constant source of comfort and joy, making our relationship truly special.</p>
+            
+            <p>In these two months, you've transformed the challenges of distance into opportunities for growth and understanding. Our love story is like a beautifully written letter, with each day adding a new chapter filled with hope, love, and the promise of a future together.</p>
+            
+            <p>Here's to celebrating the resilience of our love and the patience that sustains us. As we navigate through this distance, I am confident that our love will only continue to deepen and evolve.</p>
+
+            <p>As the saying goes:</p>
+            <p id="quote">"Distance means so little when someone means so much."</p>
+            <img id="slideshow-img" src="https://photos.app.goo.gl/dvKAbrWVYprMuVC1A">
+            <br>
+            <caption>My Cute Baby</caption>
+
+            <p>Thank you for being my source of strength and inspiration. Looking forward to the day when distance will be just a memory and we can celebrate every moment together!</p>
+
+            <p>With all my love,<br>Kanna</p>
+        </div>
+    </main>
+
+    <footer>
+        Made with ❤️ for Satya Sirisha Moogala
+    </footer>
+    <script>
+        var images = [
+        "IMG_0338.JPG",
+        "IMG_3214.JPG",
+        "IMG_3439.JPG",
+        "IMG_3775.JPG",
+        "IMG_4341.JPG",
+        "IMG_4585.JPG",
+        "IMG_4853.JPG",
+        "IMG_4873.JPG",
+        "Jan07-0080.jpg",
+        ];
+      
+        var currentIndex = 0;
+        var slideshowImg = document.getElementById("slideshow-img");
+      
+        function changeImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          slideshowImg.src = images[currentIndex];
+        }
+      
+        setInterval(changeImage, 1400);
+      </script>
+</body>
+</html>
